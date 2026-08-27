@@ -2,7 +2,7 @@ import os
 import requests
 from dotenv import load_dotenv
 from tools.route_tool import geocode_city
-
+import streamlit as st
 load_dotenv()
 GEOAPIFY_API_KEY = st.secrets["GEOAPIFY_API_KEY"]
 
