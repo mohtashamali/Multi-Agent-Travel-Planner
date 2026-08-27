@@ -22,7 +22,8 @@ import requests
 from dotenv import load_dotenv
 
 load_dotenv()  
-GEOAPIFY_API_KEY = os.getenv("GEOAPIFY_API_KEY")
+# GEOAPIFY_API_KEY = os.getenv("GEOAPIFY_API_KEY")
+GEOAPIFY_API_KEY = st.secrets["GEOAPIFY_API_KEY"]
 
 
 def geocode_city(city_name):
