@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 from tools.route_tool import geocode_city
 
 load_dotenv()
-GEOAPIFY_API_KEY = os.getenv("GEOAPIFY_API_KEY")
+GEOAPIFY_API_KEY = st.secrets["GEOAPIFY_API_KEY"]
 
 
 def find_places(city_name, category="tourism.sights", limit=8):
