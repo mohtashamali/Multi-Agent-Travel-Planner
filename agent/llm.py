@@ -19,7 +19,7 @@ from langchain_groq import ChatGroq
 
 load_dotenv()  # this reads the .env file so os.getenv can find the key
 
-GROQ_API_KEY = os.getenv("GROQ_API_KEY")
+GROQ_API_KEY = st.secrets["GROQ_API_KEY"]
 
 
 def get_llm():
