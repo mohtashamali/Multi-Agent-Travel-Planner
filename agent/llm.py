@@ -12,7 +12,7 @@ How to get a key?
     3. Click "Create API Key"
     4. Copy it into your .env file as GROQ_API_KEY=xxxxx
 """
-
+import streamlit as st
 import os
 from dotenv import load_dotenv
 from langchain_groq import ChatGroq
