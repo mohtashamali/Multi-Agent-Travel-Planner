@@ -42,13 +42,3 @@ def transport_agent(state):
         "transport_cost": transport_data["estimated_total_price"],  # used later by budget agent
     }
 
-
-# Quick manual test
-if __name__ == "__main__":
-    test_state = {
-        "start": "Hyderabad",
-        "destination": "Kerala",
-        "travel_mode": "train",
-        "num_people": 4,
-    }
-    print(transport_agent(test_state))
